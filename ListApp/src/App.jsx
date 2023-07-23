@@ -41,15 +41,16 @@ function App() {
     <>
     <form onSubmit={handleSubmit} className="new-item-form">
       <div className="form-row">
-        <label htmlFor="item">New Item</label>
+        <label htmlFor="item">New Item: </label>
         <input 
           value={newItem} 
           onChange={e => setNewItem(e.target.value)} 
           type="text" 
           id="item">
         </input>
+        <button className="button">Add</button>
       </div>
-      <button className="button">Add</button>
+      
     </form>
     <h1 className="header">Todo List</h1>
     <ul className="list">
